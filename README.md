@@ -1,4 +1,4 @@
-# tg-bot-suggestions-gatherer
+# python-tg-suggestions-collector-bot
 Very simple bot for Telegram that just gathers suggestions for posts and write it down into Google Spreadsheet.
 Based on aiogram and gspread libraries.
 
