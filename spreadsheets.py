@@ -1,7 +1,11 @@
-import gspread
+import os
 
-SPREADSHEET_ID = '1m9e-T8gkLPmjGv4oJ342Dy6mkQ8c-fW-Lk3FwW5T8t4'
-LIST_NAME="List"
+import gspread
+from dotenv import load_dotenv
+load_dotenv()
+
+SPREADSHEET_ID = os.getenv('SPREADSHEET_ID')
+LIST_NAME = os.getenv('SPREADSHEET_LIST_NAME')
 
 class SpreadsheetManager:
 

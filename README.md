@@ -4,6 +4,9 @@ Based on aiogram and gspread libraries.
 
 ## To launch
 1. Install requirements.
-2. Create `.env` file and copy content of `.env.example` there, then add your telegram bot key there
-3. Generate `credentials.json` in Google Cloud console and put it into project root
+2. Create service account in Google Cloud console, get `credentials.json` of that account and put it into project root.
+3. Create `.env` file and copy content of `.env.example` there, then add there:
+  * your telegram bot key
+  * your google spreadsheet document id (don't forget to share permissions with your service account email)
+  * list name where this bot should write lines to
 4. In terminal: `python main.py`
