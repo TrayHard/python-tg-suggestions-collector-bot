@@ -33,7 +33,7 @@ def init_bot():
     time_now = datetime.datetime.now().strftime("%d.%m.%Y %H:%M")
 
     spreadsheet_manager.append_row([username, content, time_now])
-    await message.reply(f"Спасибо! Наши лаборатории на Нибиру активированы. Проверяем новость которую ты прислал 🌖", reply_markup=kb_again)
+    await message.reply(f"Спасибо! Наши лаборатории на Нибиру активированы. Проверяем новость которую ты прислал 🌖 \n\nХочешь прислать ещё одну? Нажми на кнопку внизу 👇🏿", reply_markup=kb_again)
     await state.finish()
 
   executor.start_polling(dp, skip_updates=True)

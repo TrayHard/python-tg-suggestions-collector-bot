@@ -3,3 +3,4 @@ credentials.json
 start.bat
 __pycache__
 .venv
+.idea
